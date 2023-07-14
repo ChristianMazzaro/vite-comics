@@ -53,6 +53,11 @@ export default {
             margin-right: 20px;
             font-weight: bolder;
         }
+
+        li:hover{
+            color: #028ef9;
+
+        }
     }
 
     img {

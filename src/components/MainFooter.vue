@@ -144,6 +144,11 @@ footer{
         height: 80px;
         width: 60px;
         }
+
+        div:hover{
+            outline: 3px solid white;
+            border-radius: 10px;
+        }
     }
   
     .footer_links{
