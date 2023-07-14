@@ -163,6 +163,10 @@ footer{
             color: grey;
         }
 
+        ul>li:hover{
+            color: white;
+        }
+
         .dc_logo_bg{
             background-image: url(../assets/img/dc-logo-bg.png);
             background-size: 550px;
@@ -204,6 +208,11 @@ footer{
             img{
                 margin: 0 10px;
             }
+
+            img:hover{
+                outline: 3px solid white;
+                border-radius: 50%;
+            }
         }   
 
         button{
@@ -211,6 +220,10 @@ footer{
             background-color: rgb(64, 63, 63);
             border: 3px solid  #028ef9;
             padding: 15px;
+        }
+
+        button:hover{
+            background-color: #028ef9;
         }
     }
 }
