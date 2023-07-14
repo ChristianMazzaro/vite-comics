@@ -1,10 +1,15 @@
 <script>
+import jumbotron from '../components/jumbotron.vue';
+
 export default {
     name:"AppMain",
+    components:{
+        jumbotron,
+    },
     data(){
 
         return{
-
+        
         }
     },
     methods: {
@@ -15,9 +20,17 @@ export default {
 
 <template>
     <main>
-        <div class="content"> -- > content goes here &LT;-- </div>
-        <div></div>
-  </main>
+        <div class="container">
+
+            <jumbotron />
+            
+            <div class="content">
+                <div>
+                    <img src="../" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
 </template>
 
 
@@ -25,18 +38,22 @@ export default {
 <style lang="scss" scoped>
 
     main{
-        
+
         background-color: black;
         color: white;
         display: flex;
         align-items: center;
         justify-content: space-around;
-        padding: 50px;
+        
 
         .content {
             font-weight: bolder;
             font-size: larger;
             font-size: 35px;
+        }
+
+        .container{
+            width: 100%;
         }
     
     }
