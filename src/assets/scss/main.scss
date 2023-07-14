@@ -1,0 +1,13 @@
+// @use "./partials/variables";
+@use "./partials/reset" as *;
+
+//richiamare sempre il nome di ciò che stai importando sennò da errore
+// a meno che tu non scriva @use "./partials/variables" as * , rendendola globale;
+
+// main {
+//     color: variables.$main-color;
+// }
+
+// p{
+//     @include debug-coloring;
+// }
