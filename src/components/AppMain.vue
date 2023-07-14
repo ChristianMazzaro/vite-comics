@@ -25,10 +25,10 @@ export default {
             <jumbotron />
             
             <div class="content">
-                <div class="card">
+                <div class="card" v-for="i in 12" :key="i">
                     <img src="https://static.wikia.nocookie.net/marvel_dc/images/c/cf/Batman_Superman_Annual_Vol_2_1.jpg" alt="">
                     <h2>
-                    cazzoculoporcodddio
+                        Cazzoman returns
                     </h2>
                 </div>
             </div>
@@ -58,7 +58,7 @@ export default {
             padding: 50px 400px;
 
             .card{
-                margin: 0 10px;
+                margin: 20px 10px;
             }
         }
 
