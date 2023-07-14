@@ -1,10 +1,12 @@
 <script>
 import jumbotron from '../components/jumbotron.vue';
+import comic from '../components/comic.vue';
 
 export default {
     name:"AppMain",
     components:{
         jumbotron,
+        comic,
     },
     data(){
 
@@ -98,20 +100,21 @@ export default {
             <jumbotron />
             
             <div class="content">
-                <div class="card" v-for="(comic, i) in comics" :key="i">
-                    <img :src="comic.thumb" :alt="comic.series">
-                    
-                    <h2>
-                        {{ comic.series }}
-                    </h2>
-                    <p>
-                        {{ comic.type }}
-                    </p>
-                    <p>
-                        {{ comic.price }}
-                    </p>
 
+                <comic v-for="(comic, i) in comics" :key="i" :comicThumb="comic.thumb" :comicSeries="comic.series" :comicType="comic.type" :comicPrice="comic.price"/>
+
+                <div class="topBanner">
+                    <h1>
+                        CURRENT SERIES
+                    </h1>
                 </div>
+                
+            </div>
+
+            <div class="moreComics">
+                <button>
+                    LOAD MORE
+                </button>
             </div>
         </div>
     </main>
@@ -131,6 +134,7 @@ export default {
 
         .container{
             width: 100%;
+            position: relative;
 
             .content {
                 display: flex;
@@ -139,26 +143,34 @@ export default {
                 align-items: center;
                 margin: 0 auto;
                 padding: 50px 350px;
+            }
 
-                .card{
-                    margin: 20px 10px;  
-                    
-                    img{
-                        width:100%;
-                        height: 300px;
-                    }
+            .topBanner{
+                position: absolute;
+                padding: 10px 50px;
+                background-color: #028ef9;
+                color: white;
+                top: 420px;
+                left: 300px;
+            }
 
-                   
+            .moreComics{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
 
-                    h2{
-                        font-size: 20px;
-                        max-width: 250px;
-                    }
-
+                button{
+                    padding: 10px 50px;
+                    background-color: #028ef9;
+                    color: white;
+                    border: 0;
                 }
-                .card:hover{
-                    outline: 3px solid #028ef9;
-                    border-radius: 8px;
+
+                button:hover{
+                    background-color: white;
+                    color: #028ef9;
+                    font-weight: 600;
                 }
             }
         }

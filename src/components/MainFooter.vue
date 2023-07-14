@@ -137,6 +137,7 @@ footer{
         div{
         display: flex;
         align-items: center;
+        padding: 50px;
         }
 
         img{
@@ -146,7 +147,10 @@ footer{
         }
 
         div:hover{
-            outline: 3px solid white;
+            border-top:3px solid white ;
+            border-bottom: 3px solid white;
+            margin-bottom: -3px;
+            margin-top: -3px;
             border-radius: 10px;
         }
     }
@@ -203,6 +207,12 @@ footer{
             h2{
                 color: #028ef9;
                 font-size: 18px;
+                padding: 10px;
+            }
+
+            h2:hover{
+                outline: 3px solid #028ef9;
+                border-radius: 8px;
             }
 
             img{
