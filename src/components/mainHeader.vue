@@ -40,7 +40,7 @@ export default {
 <style lang="scss" scoped>
 
     header{
-        padding: 40px;
+        padding: 20px;
         text-align: center;
         background-color: white;
         display: flex;
@@ -56,8 +56,8 @@ export default {
     }
 
     img {
-        height: 50px;
-        width: 50px;
+        height: 100px;
+        width: 100px;
     }
 
 

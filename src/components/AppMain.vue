@@ -25,8 +25,11 @@ export default {
             <jumbotron />
             
             <div class="content">
-                <div>
-                    <img src="../" alt="">
+                <div class="card">
+                    <img src="https://static.wikia.nocookie.net/marvel_dc/images/c/cf/Batman_Superman_Annual_Vol_2_1.jpg" alt="">
+                    <h2>
+                    cazzoculoporcodddio
+                    </h2>
                 </div>
             </div>
         </div>
@@ -47,9 +50,16 @@ export default {
         
 
         .content {
-            font-weight: bolder;
-            font-size: larger;
-            font-size: 35px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            padding: 50px 400px;
+
+            .card{
+                margin: 0 10px;
+            }
         }
 
         .container{
